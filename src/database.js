@@ -4,7 +4,7 @@ const { NOTES_APP_MONGODB_HOST, NOTES_APP_MONGODB_DATABASE } = process.env;
 
 //const MONGODB_URI = `mongodb://${NOTES_APP_MONGODB_HOST}/${NOTES_APP_MONGODB_DATABASE}`;
 
-const MONGODB_URI = 'mongodb+srv://ANDRESVELEZ:zHEqn4mdxoLNFtxo@clusterluxtac.g17t9bf.mongodb.net/';
+const MONGODB_URI = 'mongodb+srv://BrianRestrepo:ythu07_liz@cluster0.dmijjsb.mongodb.net/DB_PAGINA?retryWrites=true&w=majority';
 //esto lo toman de la pagina de mongodb
 
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabla de Datos</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .table-container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        #data-table {
+            margin: 0 auto;
+        }
+
+        .delete-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-container">
+        <table id="data-table" class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ubicación</th>
+                    <th>Tipo</th>
+                    <th>Latitud</th>
+                    <th>Longitud</th>
+                    <th>Valor</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each listadosensores}}
+                <tr>
+                    <td>{{nombre}}</td>
+                    <td>{{ubicacion}}</td>
+                    <td>{{tipo}}</td>
+                    <td>{{latitud}}</td>
+                    <td>{{longitud}}</td>
+                    <td>{{valor}}</td>
+                    <td><button class="delete-button" onclick="deleteRow(this)">Eliminar</button></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function deleteRow(button) {
+            var row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body>
+
+</html>

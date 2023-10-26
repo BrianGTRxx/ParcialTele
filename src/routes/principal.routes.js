@@ -15,12 +15,9 @@ const {
 
 // Helpers
 const { isAuthenticated } = require("../helpers/auth");
-router.post("/principal/guardarSensor", isAuthenticated, guardarSensor);
-router.get("/registrarsensores", isAuthenticated, registrarSensor);
-router.get("/mostrarsensores", listarSensor);
+
 router.get("/principal/calculardimensiones", irCalcularDimensiones);
 router.get("/principal/irparametro", isAuthenticated,irparametros);
-
 router.post("/principal/iracalcular", isAuthenticated, iracalcular);
 
 
