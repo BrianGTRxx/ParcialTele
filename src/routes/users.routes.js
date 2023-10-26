@@ -7,7 +7,8 @@ const {
   renderSigninForm,
   guardarUsuario,
   signin,
-  logout
+  logout,
+  registro
 } = require("../controllers/users.controller");
 
 // Helpers
@@ -19,6 +20,7 @@ router.post("/users/guardar", isAuthenticated,guardarUsuario);
 
 router.get("/users/signup", renderSignUpForm);
 
+router.post("/users/registro", registro);
 
 router.post("/users/signup", singup);
 

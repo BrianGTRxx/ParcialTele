@@ -76,6 +76,11 @@ usersCtrl.renderSigninForm = (req, res) => {
   console.log("aquiii")
 };
 
+usersCtrl.registro = (req, res) => {
+  res.render("users/signup");
+
+};
+
 usersCtrl.signin = passport.authenticate("local", {
     successRedirect: "/",
     failureRedirect: "/users/signin",
