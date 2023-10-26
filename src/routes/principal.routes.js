@@ -9,7 +9,7 @@ const {
     irparametros,
     guardarSensor,
     registrarSensor,
-    listarSensora
+    listarSensor
 
 }= require("../controllers/principal.controller");
 
