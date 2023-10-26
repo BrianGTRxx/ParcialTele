@@ -9,4 +9,5 @@ indexCtrl.renderAbout = (req, res) => {
   res.render('about');
 };
 
+
 module.exports = indexCtrl;
